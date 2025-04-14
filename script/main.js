@@ -67,7 +67,7 @@ const animationTimeline = () => {
             opacity: 0,
             y: 10
         },
-    "+=3.5")
+    "+=3")
     .to(".two",
         0.7,
         {
@@ -86,17 +86,17 @@ const animationTimeline = () => {
             y: 10
         },
     "+=3")
-    .from(".four", 0.7, {
+    .from(".four", 0.3, {
         scale: 0.2,
         opacity: 0,
     })
-    .from(".fake-btn", 0.3, {
+    .from(".fake-btn", 0.1, {
         scale: 0.2,
         opacity: 0,
     })
     .staggerTo(
         ".hbd-chatbox span",
-        1.5, {
+        1.0, {
             visibility: "visible",
         },
         0.05
@@ -104,7 +104,7 @@ const animationTimeline = () => {
     .to(".fake-btn", 0.1, {
         backgroundColor: "rgb(127, 206, 248)",
     },
-    "+=4")
+    "+=2")
     .to(
         ".four",
         0.5, {
@@ -206,7 +206,7 @@ const animationTimeline = () => {
     })
     .staggerFrom(
         ".wish-hbd span",
-        0.7, {
+        0.5, {
             opacity: 0,
             y: -50,
             // scale: 0.3,
